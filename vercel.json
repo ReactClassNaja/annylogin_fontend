@@ -1,5 +1,8 @@
 {
-    "rewrites": [
-        { "source": "/((?!api/.).)", "destination": "/" }
+    "routes": [
+      { "src": "/", "dest": "/" },
+      { "src": "/profile", "dest": "/" },
+      { "src": "/login", "dest": "/" }
+      
     ]
-}
+  }
