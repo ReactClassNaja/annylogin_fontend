@@ -18,7 +18,7 @@ export default function Login(props) {
 
   const handleLogin = () => {
     axios({
-      url: "http://localhost:3000/login",
+      url: window.$api +'/login',
       method: "post",
       data: {
         email: email,

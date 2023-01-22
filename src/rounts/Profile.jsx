@@ -13,7 +13,7 @@ export default function Profile(props) {
      const [id,setid] = useState("")
     useEffect (()=> {
         axios({
-            url:'http://localhost:3000/getuser/1',
+            url: window.$api +'/getuser/1',
             method:'get'
         }).then(res=>{
             console.log(res.data)
@@ -42,7 +42,7 @@ export default function Profile(props) {
     }
     const handleUpdate = () => {
         axios({
-            url:'http://localhost:3000/update',
+            url: window.$api + '/update',
             method: 'put',
             data:{
                 username: username,
